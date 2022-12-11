@@ -1,5 +1,4 @@
 import pygame as pg
-from pygame import mixer
 from config_jogo import ConfigJogo,poze
 from tela_historia import Historia
 from tela_inicio import Inicio
@@ -12,13 +11,8 @@ from tela_vencendor import TelaVencedor
 
 class Jogo:
     def __init__(self):
-        pg.init()
-        mixer.init()
-        
-        mixer.music.load(r'./sons/valkyries.wav')
-        
+        pg.init()                
         self.tela = pg.display.set_mode((ConfigJogo.LARGURA_TELA, ConfigJogo.ALTURA_TELA))
-        
         pg.display.set_caption('The Game of OOP')
         Icon = pg.image.load(r'./imagens/icon/ICON.png')
         pg.display.set_icon(Icon)
@@ -26,7 +20,6 @@ class Jogo:
     def rodar(self):
         while True:
             if ConfigJogo.TELA == 'inicio':
-                mixer.music.play(-1)
                 cena = Inicio(self.tela)
                 cena.rodar()
             if ConfigJogo.TELA == 'historia':

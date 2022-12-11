@@ -81,17 +81,3 @@ def load_image(name, colorkey=None, scale=1.0):
                 colorkey = image.get_at((0, 0))
             image.set_colorkey(colorkey, pg.RLEACCEL)
         return image
-
-def poze():
-    if (pg.key.get_pressed()[pg.K_p]) and (pg.key.get_pressed()[pg.K_1]): 
-        mixer.music.unload()
-        mixer.music.load(r'./sons/poze.wav')
-        mixer.music.play(-1)
-        pg.display.set_caption('Trajadão Pro Baile')
-    if (pg.key.get_pressed()[pg.K_p]) and (pg.key.get_pressed()[pg.K_2]):
-        mixer.music.unload()
-        mixer.music.load(r'./sons/poze2.wav')
-        mixer.music.play(-1)
-        pg.display.set_caption('PITBULL DO FUNK')
-
-    
