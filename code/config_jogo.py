@@ -81,3 +81,6 @@ def load_image(name, colorkey=None, scale=1.0):
                 colorkey = image.get_at((0, 0))
             image.set_colorkey(colorkey, pg.RLEACCEL)
         return image
+
+def poze():
+    pass
