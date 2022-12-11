@@ -8,6 +8,8 @@
         Viktor Kamei Mota
         Arthur Christ Marcolan
         Arthur Fiorio da Cunha
+        
+    Obs: O jogo continha uma musica que não foi enviada por ser maior que o limte imposto pelo github
 
     Video demonstrativo do jogo funcionando:
         https://youtu.be/-krtIwnCi_g
