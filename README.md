@@ -13,3 +13,5 @@
 
     Video demonstrativo do jogo funcionando:
         https://youtu.be/-krtIwnCi_g
+    Link para instalação de pygame:
+      https://www.geeksforgeeks.org/how-to-install-pygame-in-windows/
