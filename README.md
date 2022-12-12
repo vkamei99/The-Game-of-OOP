@@ -1,17 +1,40 @@
 # The Game of OOP
- Trabalho 1 de programação orientada a objetos, feito em python com a extensão pygame
 
-    The Game of OOP é um jogo de batalha 2D produzido em liguagem python.
-    Depois de baixado o repositorio você precisa de baixar a extensão "pygame" para python, depois disso e so executar o arquivo "main.py"
-    
-    Este trabalho foi realizado pelos alunos de engenharia elétrica da UFES:
-        Viktor Kamei Mota
-        Arthur Christ Marcolan
-        Arthur Fiorio da Cunha
-        
-    Obs: O jogo continha uma musica que não foi enviada por ser maior que o limte imposto pelo github
+ Criadores: Arthur Christ Marcolan
+            Viktor Kamei Mota
+            Arthur Fiorio da Cunha
+
+Professor: Filipe Wall Mutz
+
+Matéria: Programação Orientada a Objetos
+
+## Requesitos para rodar o jogo
+
+1) É necessário que você possua o interpretador python baixado em seu computador
+2) Você precisa baixar a em seu computador a biblioteca "pygames":
+    Abrindo o CMD de seu computador e digitando:
+        python -m pip install pygame
+3) Além claro de baixar todos os arquivos presentes neste repositório
+
+## Em que consiste este trabalho
+
+Foi pedido para que nós fizessemos um trabalho no qual, o trabalho consiste em desenvolver um jogo de 2 jogadores no formato de combate em arena 
+(e.g., bomberman, dota, etc.) utilizando a linguagem Python, a biblioteca pygame e programação orientada a objetos.
+
+## Contexto histórico do jogo
+
+Durante o período mediavel, a grande nação de Oop ultilizava dos campos férteis de seus feudos para  o plantio, gerando prosperidade como nenhum outro feudo, porém após a morte do Rei de Oop, seus 4 filhos herdeiros, entram em desacordo, dividindo-se em 4 sub-famílias, cada uma delas que tem a desejo de obter a posse dessas terras e criar o seu próprio reino. Assim travando terríveis e fatais batalhas para responder uma sequinte pergunta:
+QUEM SERÁ O PRÓXIMO REI DE OOP???
+
+## Comandos para jogar
+
+**Player 1**: terá movimentações com as telcas *W*(cima), *S*(baixo), *A*(esquerda) e *D*(direita). Já as teclas de combate serão E(para ataques simples) e Q(para seus especiais).
+
+**Player 2**: terá movimentações com as telcas *I*(cima), *K*(baixo), *J*(esquerda) e *L*(direita). Já as teclas de combate serão *O*(para ataques simples) e *U*(para seus especiais).
+
+
+
+## Vídeo com uma gameplay monstrando cada personagem detalhado
 
     Video demonstrativo do jogo funcionando:
         https://youtu.be/-krtIwnCi_g
-    Link para instalação de pygame:
-      https://www.geeksforgeeks.org/how-to-install-pygame-in-windows/
