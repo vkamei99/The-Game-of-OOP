@@ -38,3 +38,7 @@ QUEM SERÁ O PRÓXIMO REI DE OOP???
 
     Video demonstrativo do jogo funcionando:
         https://youtu.be/-krtIwnCi_g
+
+## Link tutorial de instalação de pygame para windows
+
+    https://www.geeksforgeeks.org/how-to-install-pygame-in-windows/
