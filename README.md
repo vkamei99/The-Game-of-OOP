@@ -15,6 +15,7 @@ Matéria: Programação Orientada a Objetos
     Abrindo o CMD de seu computador e digitando:
         python -m pip install pygame
 3) Além claro de baixar todos os arquivos presentes neste repositório
+4) Baixado os arquivos dentro da pasta code rode o arquivo main.py
 
 ## Em que consiste este trabalho
 
