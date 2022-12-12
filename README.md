@@ -15,7 +15,6 @@ Matéria: Programação Orientada a Objetos
     Abrindo o CMD de seu computador e digitando:
         python -m pip install pygame
 3) Além claro de baixar todos os arquivos presentes neste repositório
-4) Baixado os arquivos dentro da pasta code rode o arquivo main.py
 
 ## Em que consiste este trabalho
 
@@ -33,7 +32,11 @@ QUEM SERÁ O PRÓXIMO REI DE OOP???
 
 **Player 2**: terá movimentações com as telcas *I*(cima), *K*(baixo), *J*(esquerda) e *L*(direita). Já as teclas de combate serão *O*(para ataques simples) e *U*(para seus especiais).
 
+## Observações:
 
+    Versao recomendada do python:
+    Python 3.10.2
+    
 
 ## Vídeo com uma gameplay monstrando cada personagem detalhado
 
