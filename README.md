@@ -1,8 +1,8 @@
 # The Game of OOP
 
- Criadores: Arthur Christ Marcolan
-            Viktor Kamei Mota
-            Arthur Fiorio da Cunha
+ Criadores: Arthur Christ Marcolan,
+            Viktor Kamei Mota,
+            Arthur Fiorio da Cunha,
 
 Professor: Filipe Wall Mutz
 
