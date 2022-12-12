@@ -15,7 +15,7 @@ Matéria: Programação Orientada a Objetos
     Abrindo o CMD de seu computador e digitando:
         python -m pip install pygame
 3) Além claro de baixar todos os arquivos presentes neste repositório
-4) Para rodar o jogo no windows você pode abrir o propmt de comando no diretorio principal baixado(onde contem as pastas "code","imagens"...) e digitar python code/main.py
+4) Para rodar o jogo no windows você pode abrir o propmt de comando no diretorio principal baixado (onde contem as pastas "code","imagens"...) e digitar o comando  python code/main.py
 
 ## Em que consiste este trabalho
 
