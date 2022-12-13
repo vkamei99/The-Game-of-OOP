@@ -21,8 +21,8 @@ class AcoesPersonagem():
         self.sprite_def = 0
         self.largura = ConfigJogo.LARGURA_SPRITE
         self.altura = ConfigJogo.ALTURA_SPRITE
-        x = self.posicao[0]
-        y = self.posicao[1]
+
+        x , y = self.posicao
         self.rect = pg.rect.Rect(x,y, self.largura, self.altura)
 
         self.atacando1 = False
@@ -111,12 +111,12 @@ class AcoesPersonagem():
             if self.atacando1:
                 self.sprite_def = self.sprite[1]
         
-        elif self.direcao == 'E':#desenha sprites esquerda
+        if self.direcao == 'E':#desenha sprites esquerda
             self.sprite_def = pg.transform.flip(self.sprite[0], True, False)
-            if self.atacando1:
-                self.sprite_def = pg.transform.flip(self.sprite[1], True, False)
             if self.atacando2:
                 self.sprite_def = pg.transform.flip(self.sprite[2], True, False)
+            if self.atacando1:
+                self.sprite_def = pg.transform.flip(self.sprite[1], True, False)
         
         tela.blit(self.sprite_def, self.rect)
 
