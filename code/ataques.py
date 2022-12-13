@@ -290,8 +290,8 @@ class AtaqueSpeed():
         atacante.atacando2 = True
         self.tempo_ataque = time()
 
-        self.velocidade_reset = atacante.velocidade
-        self.velocidade_boost = atacante.velocidade + 0.6*4
+        self.velocidade_reset = atacante.velocidade_reset
+        self.velocidade_boost = atacante.velocidade_reset + 0.6*4
         self.levou_dano = False
         self.contador_ataques += 1
         if atacante.atacando2:
@@ -323,11 +323,15 @@ class AtaquePoison():
         self.tempo_ataque = 0
         self.tempo_atual = 0
         self.raio = 100
+        self.contador_ataques = 0
                 
     def atacar(self, atacante, inimigo):
-        self.mouse_position = pg.mouse.get_pos()
         atacante.atacando2 = True
         self.tempo_ataque = time()
+        self.contador_ataques += 1
+        self.mouse_position = pg.mouse.get_pos()
+        self.velocidade_reset = inimigo.velocidade_reset
+        self.velocidade_slow = inimigo.velocidade_reset / 2
     
     def cooldown(self, atacante):
         self.tempo_atual = time()
@@ -340,12 +344,47 @@ class AtaquePoison():
             dist = math.sqrt((self.mouse_position[0] - inimigo.rect.x)**2 + (self.mouse_position[1] - inimigo.rect.y)**2)
             if dist <= self.raio:
                 inimigo.vida -= 0.05
+                inimigo.velocidade_reset = self.velocidade_slow
+            if dist > self.raio:
+                inimigo.velocidade_reset = self.velocidade_reset
             
     def desenha(self, tela, atacante, hitbox = False, cor = 'green'):
         if atacante.atacando2:
             if hitbox:
                 pg.draw.circle(tela, cor, self.mouse_position, self.raio)
             tela.blit(atacante.sprite[6], (self.mouse_position[0]-100, self.mouse_position[1]-100))
+    
+    def retorna_cooldown(self):
+        tempo = (self.tempo_atual - self.tempo_ataque)
+        if tempo >= self.tempo_cooldown:
+            tempo=self.tempo_cooldown
+        return tempo
+
+class AtaqueStum():
+    def __init__(self):
+        self.tempo_cooldown = 10
+        self.tempo_ataque = 0
+        self.tempo_atual = 0
+        self.levou_dano = False
+        
+    def atacar(self, atacante, inimigo):
+        atacante.atacando2 = True
+        self.tempo_ataque = time()
+        self.levou_dano = False
+    
+    def cooldown(self, atacante):
+        self.tempo_atual = time()
+        if atacante.atacando2:
+            if self.tempo_atual - self.tempo_ataque >= self.tempo_cooldown:
+                atacante.atacando2 = False
+    
+    def atualiza_ataque(self, atacante, inimigo, mapa):
+        if atacante.atacando2:
+            inimigo.pararX()
+            inimigo.pararY()
+
+    def desenha(self, tela, atacante, hitbox = False, cor = 'green'):
+        pass
     
     def retorna_cooldown(self):
         tempo = (self.tempo_atual - self.tempo_ataque)
