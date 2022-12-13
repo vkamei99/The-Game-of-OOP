@@ -57,15 +57,11 @@ class AcoesPersonagem():
     def colisao_player(self, pos_inimigo, colisao):
         if colisao == 'D':
             self.posicao = (pos_inimigo[0]-self.largura, self.posicao[1])
-            #self.velocidadeX = -(self.velocidadeX)
         if colisao == 'A':
             self.posicao = (pos_inimigo[0]+self.largura, self.posicao[1])
-            #self.velocidadeX = -(self.velocidadeX)
         if colisao == 'W':
             self.posicao = (self.posicao[0], pos_inimigo[1]-self.altura)
-            #self.velocidadeY = -(self.velocidadeY)
         if colisao == 'S':
-            #self.velocidadeY = -(self.velocidadeY)
             self.posicao = (self.posicao[0], pos_inimigo[1]+self.altura)
 
     def colisao_mapa(self, direcao, mapa):
