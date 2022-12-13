@@ -162,6 +162,9 @@ class TelaJogo:
         self.p2.ataque1.desenha(self.tela, self.p2, False)
         self.p2.ataque2.desenha(self.tela, self.p2, False)
         self.p2.desenha(self.tela, False, 'blue')
-
+    
         self.estado.desenha(self.tela)
+
+        debug(self.tela, f'{self.p1.velocidade},{self.p1.direction}')
+
         pg.display.flip()
