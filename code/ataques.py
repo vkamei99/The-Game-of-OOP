@@ -284,8 +284,12 @@ class AtaqueSpeed():
         self.contador_ataques = 0
         self.levou_dano = False
         
-        self.raio = 45
-            
+        self.atk_rect_d = 0
+        self.atk_rect_e = 0
+
+        self.largura = 60
+        self.altura = 40
+
     def atacar(self, atacante, inimigo):
         atacante.atacando2 = True
         self.tempo_ataque = time()
@@ -302,11 +306,25 @@ class AtaqueSpeed():
         if atacante.atacando2:
             if self.tempo_atual - self.tempo_ataque >= self.tempo_cooldown:
                 atacante.atacando2 = False
-
+            
     def atualiza_ataque(self, atacante, inimigo, mapa, quebra_bloco = False):
         if not atacante.atacando2 and (self.contador_ataques >=1):
             atacante.velocidade_reset = self.velocidade_reset
-
+        
+        if atacante.atacando2:
+            if atacante.atacando1:
+                if atacante.direcao == 'D':
+                    self.atk_rect_d = pg.rect.Rect(atacante.rect.right, atacante.rect.y+5, self.largura,self.altura)
+                    if self.atk_rect_d.colliderect(inimigo.rect):
+                        inimigo.pararX()
+                        inimigo.pararY()
+                        
+                if atacante.direcao == 'E':
+                    self.atk_rect_e = pg.rect.Rect(atacante.rect.left-self.largura, atacante.rect.y+5, self.largura,self.altura)
+                    if self.atk_rect_e.colliderect(inimigo.rect):
+                        inimigo.pararX()
+                        inimigo.pararY()
+                
     def desenha(self, tela, atacante, hitbox = False, cor = 'green'):
         if atacante.atacando2:
             pass
@@ -362,7 +380,7 @@ class AtaquePoison():
 
 class AtaqueStum():
     def __init__(self):
-        self.tempo_cooldown = 10
+        self.tempo_cooldown = 0.5
         self.tempo_ataque = 0
         self.tempo_atual = 0
         self.levou_dano = False
