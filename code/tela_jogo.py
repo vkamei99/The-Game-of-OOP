@@ -165,6 +165,6 @@ class TelaJogo:
     
         self.estado.desenha(self.tela)
 
-        debug(self.tela, f'{self.p1.velocidade},{self.p1.direction}')
+        #debug(self.tela, f'{self.p1.velocidade},{self.p1.direction}')
 
         pg.display.flip()
