@@ -48,28 +48,28 @@ QUEM SERÁ O PRÓXIMO REI DE OOP???
     https://www.geeksforgeeks.org/how-to-install-pygame-in-windows/
 
 ## Requisitos para avaliação
-*ATAQUES*
+*ATAQUES*:
 
-*Tyron Pitbull:
-    O personagem Tyron Pitbull e um dos quatro personagens pedidos para ser feito ele tem ataque fisico e quando usado o seu especial ele recebe um acrescimo de velocidade e seu ataque passa a dar "stun" nos outros personagens
+    *Tyron Pitbull:
+        O personagem Tyron Pitbull e um dos quatro personagens pedidos para ser feito ele tem ataque fisico e quando usado o seu especial ele recebe um acrescimo de velocidade e seu ataque passa a dar "stun" nos outros personagens
 
-*Draco Oriens:
-    O personagem Draco Oriens e o nosso atacante a distância ele lança flechas e em seu especial ele lança uma "flecha minion" que segue o inimigo durante um periodo de tempo
+    *Draco Oriens:
+        O personagem Draco Oriens e o nosso atacante a distância ele lança flechas e em seu especial ele lança uma "flecha minion" que segue o inimigo durante um periodo de tempo
 
-*Lacertus Acertus:
-    O ataque com mouse foi adicionado para o lacertus que quando usa seu ataque especial e criada uma poça de veneno que dano ao inimigo que entra nela, ele tambem ataca a distancia
+    *Lacertus Acertus:
+        O ataque com mouse foi adicionado para o lacertus que quando usa seu ataque especial e criada uma poça de veneno que dano ao inimigo que entra nela, ele tambem ataca a distancia
 
-*Isolde:
-    Isolde e o personagem que ataca fisicamente seu especial e de ação propria curando ele durante o especial ele e imune a dano
+    *Isolde:
+        Isolde e o personagem que ataca fisicamente seu especial e de ação propria curando ele durante o especial ele e imune a dano
 
-*MAPA*
+*MAPA*:
     O mapa foi feito com tilemaps adicionando 4 tipos de tiles diferentes;
         o de fundo onde os personagens podem andar livremente,
         a parede onde os personagens não podem andar, 
         a água onde os personagens ficam mais lento,
         a paredes quebraveis que o personagem nao pode andar ate quebrar elas.
 
-*TESTES*
+*TESTES*:
     No arquivo tela_jogo.py na parte de desenha pode ser ligado e desligado a hitbox dos ataques e dos personagens, tambem tem uma função debug que pode ser usada para imprimir variaveis na tela.
 
      
