@@ -154,9 +154,9 @@ class TelaJogo:
 
     def desenha(self):
         self.desenha_mapa()
-
+        
         self.p1.ataque1.desenha(self.tela, self.p1, False) #(tela, player, hitbox, cor da hitbox = red)
-        self.p1.ataque2.desenha(self.tela, self.p1, False)
+        self.p1.ataque2.desenha(self.tela, self.p1, False) #(tela, player, hitbox (se tiver), cor da hitbox = red)
         self.p1.desenha(self.tela, False) #(tela, hitbox, cor da hitbox = red)
 
         self.p2.ataque1.desenha(self.tela, self.p2, False)
