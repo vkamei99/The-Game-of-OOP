@@ -39,8 +39,7 @@ QUEM SERÁ O PRÓXIMO REI DE OOP???
     Python 3.10.2
     
 ## Vídeo com uma gameplay monstrando cada personagem detalhado
-Video demonstrativo do jogo funcionando:
-    https://youtu.be/-krtIwnCi_g
+Video demonstrativo do jogo funcionando: https://youtu.be/-krtIwnCi_g
 
 ## Link tutorial de instalação de pygame para windows
 
