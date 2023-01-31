@@ -70,4 +70,4 @@ Video demonstrativo do jogo funcionando: https://youtu.be/-krtIwnCi_g
 **TESTES**:
     No arquivo tela_jogo.py na parte de desenha pode ser ligado e desligado a hitbox dos ataques e dos personagens, tambem tem uma função debug que pode ser usada para imprimir variaveis na tela.
 
-     
+## Screenshots
