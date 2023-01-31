@@ -39,15 +39,15 @@ QUEM SERÁ O PRÓXIMO REI DE OOP???
     Python 3.10.2
     
 ## Vídeo com uma gameplay monstrando cada personagem detalhado
-
-    Video demonstrativo do jogo funcionando:
-        https://youtu.be/-krtIwnCi_g
+Video demonstrativo do jogo funcionando:
+    https://youtu.be/-krtIwnCi_g
 
 ## Link tutorial de instalação de pygame para windows
 
     https://www.geeksforgeeks.org/how-to-install-pygame-in-windows/
 
 ## Requisitos para avaliação
+
 **ATAQUES**:
 * Tyron Pitbull:
     O personagem Tyron Pitbull e um dos quatro personagens pedidos para ser feito ele tem ataque fisico e quando usado o seu especial ele recebe um acrescimo de velocidade e seu ataque passa a dar "stun" nos outros personagens
