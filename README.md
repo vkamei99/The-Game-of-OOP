@@ -48,8 +48,8 @@ QUEM SERÁ O PRÓXIMO REI DE OOP???
     https://www.geeksforgeeks.org/how-to-install-pygame-in-windows/
 
 ## Requisitos para avaliação
-* ATAQUES
-    Tyron Pitbull:
+* ATAQUES:
+    *Tyron Pitbull:
         O personagem Tyron Pitbull e um dos quatro personagens pedidos para ser feito ele tem ataque fisico e quando usado o seu especial ele recebe um acrescimo de velocidade e seu ataque passa a dar "stun" nos outros personagens
 
     Draco Oriens:
