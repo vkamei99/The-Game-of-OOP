@@ -43,5 +43,5 @@ class Selecao2:
     def desenha(self):
         self.tela.blit(self.imagem_de_fundo,(0, 0, ConfigJogo.LARGURA_TELA, ConfigJogo.ALTURA_TELA))
         pg.draw.rect(self.tela, 'red', (self.pos_x, self.pos_y, 400, 150), 5)
-        debug(self.tela,ConfigJogo.PERSONAGEM_P2)
+        #debug(self.tela,ConfigJogo.PERSONAGEM_P2)
         pg.display.flip()
