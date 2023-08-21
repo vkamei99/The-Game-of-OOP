@@ -44,3 +44,5 @@ class Stone:
 
     def retorna_rect(self):
         return self.rect
+
+#alterei tmj
