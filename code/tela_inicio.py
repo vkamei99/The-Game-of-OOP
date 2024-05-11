@@ -1,6 +1,6 @@
 import pygame as pg
 import sys
-from config_jogo import ConfigJogo, load_image, poze
+from config_jogo import ConfigJogo, load_image
 
 class Inicio:
     def __init__(self, tela):
@@ -12,7 +12,7 @@ class Inicio:
         while self.rodando:
             self.tratamento_de_eventos()
             self.desenha()
-
+            
     def tratamento_de_eventos(self):
         for event in pg.event.get():
             if (event.type == pg.QUIT) or (pg.key.get_pressed()[pg.K_ESCAPE]):
@@ -21,7 +21,7 @@ class Inicio:
             if (event.type == pg.KEYDOWN and event.key == pg.K_SPACE):
                 self.rodando = False
                 ConfigJogo.TELA = 'historia'
-            poze()
+            
             
     def desenha(self):
         self.tela.blit(self.imagem_de_fundo,(0, 0, ConfigJogo.LARGURA_TELA, ConfigJogo.ALTURA_TELA))

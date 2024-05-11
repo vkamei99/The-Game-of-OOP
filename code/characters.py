@@ -9,7 +9,7 @@ posicao2=[(ConfigJogo.LARGURA_TELA - ConfigJogo.LARGURA_SPRITE - 20, ConfigJogo.
 
 #stats = [velocidade, vida, dano]
 stats_isolde = [1.2, 110, 8, ('fisico', 'cura')]
-stats_pitbull = [0.8, 140, 9, ('fisico', 'boost_speed')]#dano 9
+stats_pitbull = [0.8, 140, 9, ('fisico', 'boost_speed')]
 stats_lacertus = [1, 100, 10, ('distancia', 'poison')]
 stats_draco = [1.4, 90, 7, ('distancia', 'minion')]
 

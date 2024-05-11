@@ -84,3 +84,23 @@ def load_image(name, colorkey=None, scale=1.0):
 
 def poze():
     pass
+
+class Music():
+    def __init__(self):
+        valkiria ="sons\Valkyries.mp3"
+        pg.mixer.init()
+        pg.mixer.music.load(valkiria)
+
+    def play(self):
+        pg.mixer.music.play()
+
+    def stop(self):
+        pg.mixer.music.stop()
+
+    def volume(self, volume):
+        for event in pg.event.get():    
+            if (event.type == pg.KEYDOWN and event.key == pg.K_UP):
+                volume = pg.mixer.music.get_volume() + 0.1
+            elif (event.type == pg.KEYDOWN and event.key == pg.K_DOWN):
+                volume = pg.mixer.music.get_volume() - 0.1
+        pg.mixer.music.set_volume(volume)

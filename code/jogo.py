@@ -1,5 +1,5 @@
 import pygame as pg
-from config_jogo import ConfigJogo,poze
+from config_jogo import ConfigJogo,Music
 from tela_historia import Historia
 from tela_inicio import Inicio
 from tela_selecao_p1 import Selecao1
@@ -16,9 +16,11 @@ class Jogo:
         pg.display.set_caption('The Game of OOP')
         Icon = pg.image.load(r'./imagens/icon/ICON.png')
         pg.display.set_icon(Icon)
+        self.music = Music()
         
     def rodar(self):
         while True:
+            self.music.play()
             if ConfigJogo.TELA == 'inicio':
                 cena = Inicio(self.tela)
                 cena.rodar()
