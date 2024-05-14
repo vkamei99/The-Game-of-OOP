@@ -1,6 +1,6 @@
 import pygame as pg
 import sys
-from config_jogo import ConfigJogo, load_image, poze
+from config_jogo import ConfigJogo, load_image
 
 
 class Personagem2:

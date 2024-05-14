@@ -1,1 +1,52 @@
-https://www.youtube.com/watch?v=5VYyHglSDxY&t=220s
+Help me make a diagram of my game architecture
+Below is a conceptual diagram illustrating the interactions between the main components of the game architecture:
+
+[main.py] --> [Jogo.py] --+--> [tela_inicio.py]
+                           +--> [tela_historia.py]
+                           +--> [tela_jogo.py]
+                           +--> [tela_selecao_p1.py]
+                           +--> [tela_selecao_p2.py]
+                           +--> [tela_personagem1.py]
+                           +--> [tela_personagem2.py]
+
+[Jogo.py] <--> [config_jogo.py] <--> [Assets: imagens/, sons/]
+
+[Game Mechanics]
+   |--> [players.py]
+   |--> [ataques.py]
+   |--> [sprites.py]
+   |--> [tile.py]
+
+[Utilities]
+   |--> [cronometro.py]
+   |--> [estado_jogo.py]
+
+Explanation:
+    Arrows indicate the flow of control or data. For example, Jogo.py directs the game by switching between different screens based on user interaction.
+    Each script/module works semi-independently but under the coordination of Jogo.py, ensuring a cohesive gameplay experience.
+    Assets are loaded through config_jogo.py, which serves as an intermediary to provide necessary resources to the game components.
+
+-----------------------------------------------------------------------------------------
+To enhance the understanding of the game code and structure in your documentation, here are some visual aids you might consider adding:
+
+    Flowcharts: Create flowcharts to illustrate the logic and flow of control across different parts of the game, especially the transitions between screens (tela_*.py files) managed by Jogo.py. This will help visualize the game's architecture from initialization to gameplay.
+
+    UML Diagrams:
+        Class Diagrams: Show relationships between classes, especially in modules like players.py, ataques.py, and sprites.py. This can help in understanding how objects interact and are structured within the game.
+        Sequence Diagrams: Detail the interactions between components during gameplay, such as the sequence of method calls when a player executes an attack or changes screens.
+
+    Component Diagrams: Outline how different scripts/modules (e.g., Jogo.py, config_jogo.py, estado_jogo.py) interact with each other and with the game’s assets. This type of diagram could depict how data flows through the system and how components depend on each other.
+
+    Screenshots:
+        Include screenshots of each game screen (tela_inicio.py, tela_jogo.py, etc.). This visually ties the code’s functional parts to their visual outcomes, making it easier for new developers to connect the codebase with the actual gameplay.
+        Screenshots of character movements, attack animations, and interactions from the game to showcase how implemented features appear during play.
+
+    Code Snippets:
+        Include relevant code snippets next to descriptions of functionalities in the documentation. For instance, show how attacks are initialized in ataques.py or how player movements are handled in players.py.
+        Highlight how assets are loaded and managed within config_jogo.py.
+
+    State Transition Diagrams:
+        Create diagrams that show game state transitions handled by estado_jogo.py, like moving from active play to a paused state or game over conditions.
+
+    Graphical Asset Management Diagram:
+        Diagram showing how assets are organized in the imagens/ and sons/ directories and how they are referenced and loaded in the game. This could help new developers understand where to place new assets and how to ensure they are correctly integrated.

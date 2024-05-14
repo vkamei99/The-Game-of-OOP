@@ -82,9 +82,6 @@ def load_image(name, colorkey=None, scale=1.0):
             image.set_colorkey(colorkey, pg.RLEACCEL)
         return image
 
-def poze():
-    pass
-
 class Music():
     def __init__(self):
         valkiria ="sons\Valkyries.mp3"

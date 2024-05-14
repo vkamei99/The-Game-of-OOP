@@ -2,7 +2,6 @@ import pygame as pg
 import math
 from typing import Tuple
 from config_jogo import ConfigJogo, debug
-from ataques import *
 
 class AcoesPersonagem():
     def __init__(self, posicao, stats, sprite, ataque1, ataque2):
