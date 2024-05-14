@@ -98,9 +98,4 @@ class Music():
         pg.mixer.music.stop()
 
     def volume(self, volume):
-        for event in pg.event.get():    
-            if (event.type == pg.KEYDOWN and event.key == pg.K_UP):
-                volume = pg.mixer.music.get_volume() + 0.1
-            elif (event.type == pg.KEYDOWN and event.key == pg.K_DOWN):
-                volume = pg.mixer.music.get_volume() - 0.1
         pg.mixer.music.set_volume(volume)
