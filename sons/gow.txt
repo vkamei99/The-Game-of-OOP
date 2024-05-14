@@ -1,4 +1,3 @@
-Help me make a diagram of my game architecture
 Below is a conceptual diagram illustrating the interactions between the main components of the game architecture:
 
 [main.py] --> [Jogo.py] --+--> [tela_inicio.py]
